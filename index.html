@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Site com Cartões</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b2341;
+            color: white;
+        }
+
+        header {
+            padding: 30px;
+            text-align: center;
+            background-color: #081b33;
+        }
+
+        nav {
+            padding: 15px;
+            text-align: center;
+            background-color: #102f55;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        .cartoes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cartao {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 160px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            background-color: #081b33;
+        }
+           #cartao1 {
+           background-color:#2F268F ;
+           color:#C7E2DE ;
+        }
+           #cartao2 {
+           background-color:#340717 ;
+           color:#C376B4 ;
+        }
+         #cartao3 {
+           background-color:#07331B ;
+           color:#76A6C2 ;
+        }
+        #cartao4 {
+           background-color:#B8CFDE ;
+           color:#C01414 ;
+        }
+        #cartao5 {
+           background-color:#F4E5AC ;
+           color:#3613BF ;
+        }
+        #cartao6 {
+           background-color:#6F3E94 ;
+           color:#BDD0DE ;
+        }
+        #cartao7 {
+           background-color:#DD1616 ;
+           color:#F9813B ;
+        }
+        #cartao8 {
+           background-color:#DEA784 ;
+           color:#000000 ;
+        }
+        
+
+
+        /* Quando a tela ficar menor, organiza em 2 colunas */
+        @media (max-width: 850px) {
+            .cartoes {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Site</h1>
+        <p>Exemplo de página semântica com cartões</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <main>
+        <div class="cartoes">
+
+            <div class="cartao" id="cartao1">
+                <h2>Abraham Lincoln</h2>
+                <p>
+                    “No final das contas, não são os anos de sua vida que contam. É a vida em seus anos."
+                    Razão de contraste: 8.56
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao2">
+                <h2>As Vantagens de ser invisível</h2>
+                <p>
+                  "Nós aceitamos o amor que achamos que merecemos."
+                   Razão de contraste: 5.53
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao3">
+                <h2>As Vantagens de ser invisível</h2>
+                <p>
+                 "Não podemos escolher de onde viemos, mas podemos escolher para onde vamos."
+                  Razão de contraste: 5.34
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao4">
+                <h2>Gênio Indomável</h2>
+                <p>
+                   "Liberdade é o direito de respirar; não se pode respirar com leis rígidas."
+                    Razão de contraste: 3.88
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao5">
+                <h2>Professor John Keating</h2>
+                <p>
+                   "Não importa o que dizem a você, palavras e ideias podem mudar o mundo."
+                    Razão de contraste: 8.32
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao6">
+                <h2>Frank Ocean</h2>
+                <p>
+                   "Os sorrisos mais bonitos escondem os segredos mais profundos. Os olhos mais bonitos são os que mais choraram. E os corações mais gentis são os que mais sentiram dor."
+                    Razão de contraste: 4.74
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao7">
+                <h2>George Orwell</h2>
+                <p>
+                    "Quem controla o passado, controla o futuro. Quem controla o presente, controla o passado."
+                   Razão de contraste: 1.96
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao8">
+                <h2>Frank Ocean</h2>
+                <p>
+                    "Eu acho que todos nós mudamos o caminho uns dos outros... Não acho que nenhum de nós possa viver sem afetar o outro."
+                     Razão de contraste: 9.97
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 - Meu Site</p>
+    </footer>
+
+</body>
+</html>
